@@ -2,4 +2,4 @@
 
 ## Usage
 1. `chmod +x clone.sh`
-2. `./clone.sh <git protocal url>`
+2. `./clone.sh <git protocol url>`
