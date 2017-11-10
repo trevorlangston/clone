@@ -4,7 +4,7 @@ if [ -z "$1" ]
     exit 1
 fi
 
-domain=$(echo "$1" | grep -oe '@.*com' | tr -d @)
+domain=$(echo "$1" | grep -oE '@git(hub|lab).com' | tr -d @)
 user=$(echo "$1" | grep -oe ':.*/' | tr -d /:)
 if [ -z "$domain" ] || [ -z "$user" ]
   then
